@@ -1,0 +1,66 @@
+:root{
+	--dark: #291f71;
+	--light: #4eeaf6;
+}
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--dark);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--light);
+}
+@keyframes wait{
+	from{
+		background: var(--light);
+		color: var(--light);
+	}
+	to{
+		color: var(--dark);
+		background: var(--dark);
+	}
+}
+.pointer.wait{
+	animation-name: wait;
+	animation-duration: 1200ms;
+	animation-iteration-count: infinite;
+}
+.pointer.write{
+	background: var(--light);
+	color: var(--dark);
+}
+.pointer.space{
+	color: var(--light);
+}
+.pointer.letter{
+	color: var(--dark);
+}
+h1{
+	font-size: 2rem;
+	text-align: center;
+	margin: 10vh 0;
+}
+p{
+	text-align: justify;
+	font-size: 1rem;
+	
+}
+html{
+	font-size: 24px;
+	font-family:monospace;
+	color: var(--light);
+	
+}
+body{
+	background: var(--dark);
+	margin: 0 10vw;
+}
+*{
+	margin:0;
+	padding: 0;
+}
